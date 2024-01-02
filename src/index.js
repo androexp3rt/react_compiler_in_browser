@@ -88,9 +88,7 @@ export default function App() {
                     <textarea className="code" id="cssCode" defaultValue={appCss}></textarea>
                 </div>
             </div>
-            <div id="app">
-                <App />
-            </div>
+            <App />
         </div>
     )
 }
