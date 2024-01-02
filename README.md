@@ -4,7 +4,7 @@ In the project directory, you can run:
 
 ### `npm run launch`
 
-Runs the api powering the apps real time editing
+Runs the api powering the apps real time editing.\
 Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
 
 ### `npm start`
