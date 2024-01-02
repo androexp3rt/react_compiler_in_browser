@@ -1,13 +1,67 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#Application {
+    width: 100vw;
+    height: 100vh;
+    #container {
+        width: 100vw;
+        height: calc(50vh - 5px);
+        display: flex;
+        border-bottom: 5px solid white;
+        align-items: flex-start;
+        justify-content: flex-start;
+        > .codeBox {
+            width: calc(50% - 2.5px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-right: 2.5px solid white;
+            > .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: calc(100% - 20px);
+                height: 10%;
+                padding: 0 10px;
+                background-color: bisque;
+                > button {
+                    border: none;
+                    background-color: greenyellow;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+            }
+            > #cssHeader {
+                background-color: grey;
+            }
+            > .code {
+                width: calc(100% - 4px);
+                height: 90%;
+                background-color: green;
+                color: wheat;
+                border: none;
+            }
+            .code:focus {
+                outline: none;
+            }
+            > #cssCode {
+                background-color: black;
+            }
+        }
+    }
+    #app {
+        width: 100vw;
+        height: 50vh;
+    }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
